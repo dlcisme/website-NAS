@@ -1,0 +1,41 @@
+.nas-background {
+    background: blue url("../images/nas-logo.png") no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.nas_logo {
+    background: url("../images/nas-logo.png") no-repeat;
+}
+
+.freenas_logo {
+    background: url("../images/freenas-logo.png") no-repeat;
+}
+
+.transmission_logo {
+    background: url("../images/transmission-logo.png") no-repeat;
+}
+
+.jackett_logo {
+    background: url("../images/jackett-logo.png") no-repeat;
+}
+
+.sonarr_logo {
+    background: url("../images/sonarr-logo.png") no-repeat;
+}
+
+.radarr_logo {
+    background: url("../images/radarr-logo.png") no-repeat;
+}
+
+.headphones_logo {
+    background: url("../images/headphones-logo.png") no-repeat;
+}
+
+.plex_logo {
+    background: url("../images/plex-logo.png") no-repeat;
+}
+
+.mineos_logo {
+    background: url("../images/mineos-logo.png") no-repeat;
+}

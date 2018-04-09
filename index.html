@@ -1,169 +1,39 @@
-
 <!doctype html>
-
 
 <html lang="en">
 
 <head>
 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/nas.css">
+  <link rel="stylesheet" href="./css/nav.css">
 
-<!--
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  
-    <script src"myscript.js">  
--->
+  <script src="./js/nav.js"></script>
 
-    <style> 
-    
-    *,*:before,*:after{box-sizing:inherit;}
+  <title>NAS</title>
 
-    .nas-background{
-        background: #000FFF url("../images/nas-logo.png") no-repeat;
-        background-size: contain; 
-        background-position: center;
-    }
-
-
-    html {
-/*      overflow-x: hidden; */
-      box-sizing: border-box;
-    }
-
-
-    body {
-       margin: 0px;
-    }
-    
- 
-   
-    .nas_logo {
-        background: url("../images/nas-logo.png") no-repeat;
-    }
-    
-    .freenas_logo {
-        background: url("../images/freenas-logo.png") no-repeat;
-    }
-
-    .transmission_logo {
-        background: url("../images/transmission-logo.png") no-repeat;
-    }
-
-   .jackett_logo {
-        background: url("../images/jackett-logo.png") no-repeat;
-    }
-
-    .plex_logo {
-        background: url("../images/plex-logo.png") no-repeat;
-    }
-
-    .sonarr_logo {
-        background: url("../images/sonarr-logo.png") no-repeat;
-    }
-
-   .radarr_logo {
-        background: url("../images/radarr-logo.png") no-repeat;
-    }
-
-   .headphones_logo {
-        background: url("../images/headphones-logo.png") no-repeat;
-    }
-
-   .mineos_logo{
-       background: url("../images/mineos-logo.png") no-repeat;    
-    }
-
-
-
-   .nav-tab{
-      float:left;
-  /*    border:none;  */
-  /*    display:block;  */
-  /*    outline:0;  */
-   /*   width: 10vh;  use vh if you want square tabs */
-      width: 11vw;   /* use vw if you want tabs across nav bar */
-      height: 10vh; 
-      background-size: contain;
-      background-position: center;
-   }
-
-   .nav-tab:hover{
-      background-color:yellow!important;
-   }
-
-    iframe-container {
-       display: block;
-/*       width: 100%;  */ 
-       height: 90vh;
-    }
-
-    .round-corners{
-        border-radius:16px;
-    }
-
-    .active-tab{
-      background-color:red!important;
-    }
-
-    iframe {
-         border-width: 0px;    
-       border-top-width: 2px;    
-
-       width: 100%;   
-       height:100%;          
-       display:block;
-    }
-
-   nav-bar{
-       background-color:#000FFF;
-       width:100vw;  
- /*      height: 10vh;  */
-       display: block;
-       overflow:hidden;  
-   }
-
-    
-
-
-    </style>
-    <title>NAS</title>
 </head>
+
 <body>
 
-<nav-bar>
-  <a href="http://Nginx:80"          onclick="activeTab(event)"                      class="nav-tab round-corners nas_logo active-tab"></a>
-  <a href="http://FreeNAS:80"        onclick="activeTab(event)" target="tab-content" class="nav-tab round-corners freenas_logo"></a>
-  <a href="http://Transmission:8080" onclick="activeTab(event)" target="tab-content" class="nav-tab round-corners transmission_logo"></a>
-  <a href="http://Jackett:8080"      onclick="activeTab(event)" target="tab-content" class="nav-tab round-corners jackett_logo"></a>
-  <a href="http://Sonarr:8080"       onclick="activeTab(event)" target="tab-content" class="nav-tab round-corners sonarr_logo"></a>
-  <a href="http://Radarr:8080"       onclick="activeTab(event)" target="tab-content" class="nav-tab round-corners radarr_logo"></a>
-  <a href="http://HeadPhones:8080"   onclick="activeTab(event)" target="tab-content" class="nav-tab round-corners headphones_logo"></a>
-  <a href="http://Plex:32400"        onclick="activeTab(event)" target="tab-content" class="nav-tab round-corners plex_logo"></a>
-  <a href="http://MineCraft:8080"    onclick="activeTab(event)" target="tab-content" class="nav-tab round-corners mineos_logo"></a>
-</nav-bar>
+  <nav-bar>
+    <a href="http://Nginx:80" onclick="activeTab(event)" class="nav-tab round-corners nas_logo active-tab"></a>
+    <a href="http://FreeNAS:80" onclick="activeTab(event)" target="tab-content" class="nav-tab round-corners freenas_logo"></a>
+    <a href="http://Transmission:8080" onclick="activeTab(event)" target="tab-content" class="nav-tab round-corners transmission_logo"></a>
+    <a href="http://Jackett:8080" onclick="activeTab(event)" target="tab-content" class="nav-tab round-corners jackett_logo"></a>
+    <a href="http://Sonarr:8080" onclick="activeTab(event)" target="tab-content" class="nav-tab round-corners sonarr_logo"></a>
+    <a href="http://Radarr:8080" onclick="activeTab(event)" target="tab-content" class="nav-tab round-corners radarr_logo"></a>
+    <a href="http://HeadPhones:8080" onclick="activeTab(event)" target="tab-content" class="nav-tab round-corners headphones_logo"></a>
+    <a href="http://Plex:32400" onclick="activeTab(event)" target="tab-content" class="nav-tab round-corners plex_logo"></a>
+    <a href="http://MineCraft:8080" onclick="activeTab(event)" target="tab-content" class="nav-tab round-corners mineos_logo"></a>
+  </nav-bar>
 
-<iframe-container>
-  <iframe class="nas-background" name="tab-content"></iframe>
-</iframe-container>
-
-
-<script>
-
-
-function activeTab(event) {
-  var i, tabs;
-  tabs = document.getElementsByClassName("nav-tab");
-
-  for (i = 0; i < tabs.length; i++) {
-    tabs[i].className = tabs[i].className.replace(" active-tab", "");
-  }
-
-  event.currentTarget.className += " active-tab";
-
-}
-
-</script>
+  <iframe-container>
+    <iframe class="nas-background" name="tab-content"></iframe>
+  </iframe-container>
 
 </body>
+
 </html>
