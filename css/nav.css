@@ -1,17 +1,21 @@
+/* make sure all element inherit the box-size */
 *,
 *:before,
 *:after {
     box-sizing: inherit;
 }
 
+/* set the box-size so the elements's border is the true border size */
 html {
     box-sizing: border-box;
 }
 
+/* remove any margins set by browser */
 body {
     margin: 0px;
 }
 
+/* set the iframe's dimensions to be the size of the element it's contained in */
 iframe {
     border-width: 0px;
     border-top-width: 2px;
@@ -20,11 +24,18 @@ iframe {
     display: block;
 }
 
+/* container for the iframe */
+/* set to 90% of the viewable height */
+/* if you change this, change the .nav-tab height */
+/* make sure (iframe-container height) + (.nav-tab height) = 100 */
 iframe-container {
     display: block;
     height: 90vh;
 }
 
+/* set the navigation bar's properties */
+/* height is not needed as the .nav-tab height is used instead */
+/* otherwise (iframe-container height) + (nav-bar height) = 100  */
 nav-bar {
     background-color: blue;
     width: 100vw;
@@ -33,6 +44,10 @@ nav-bar {
     overflow: hidden;
 }
 
+/* set the navigation tab's properties */
+/* NOTE: the width should be set to (100/# of tabs) to evenly */
+/*       distribute the tabs across the navigation bar. If you want */
+/*       square tabs change the width to be the same as the height */
 .nav-tab {
     float: left;
     /* width: 10vh; */
@@ -44,14 +59,18 @@ nav-bar {
     background-position: center;
 }
 
+/* navigation tab hover color  */
 .nav-tab:hover {
     background-color: yellow !important;
 }
 
+/* active (selected) tab color */
 .active-tab {
     background-color: red !important;
 }
 
+/* make the tab corners round.  A bigger number makes the corners */
+/* more rounded */
 .round-corners {
     border-radius: 16px;
 }
