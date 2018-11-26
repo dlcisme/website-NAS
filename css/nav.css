@@ -52,7 +52,7 @@ nav-bar {
     float: left;
     /* width: 10vh; */
     /*use vh if you want square tabs */
-    width: 11vw;
+    width: 10vw;
     /* use vw if you want tabs across nav bar */
     height: 10vh;
     background-size: contain;
