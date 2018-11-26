@@ -1,3 +1,8 @@
+/* change the images for the tabs here */
+/* NOTE: current images are 256x256, size doesn't matter */
+/*       as the browser will resize images to fit. This is */
+/*       only mentioned for consistency sake. */
+
 .nas-background {
     background: blue url("../images/nas-logo.png") no-repeat;
     background-size: contain;

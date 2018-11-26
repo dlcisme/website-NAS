@@ -1,3 +1,7 @@
+//--------------------------------------------------------------------
+// removes the active-tab class from all tab elements and sets
+// the class to active-tab for the current element
+//--------------------------------------------------------------------
 function activeTab(event) {
   var i, tabs;
   tabs = document.getElementsByClassName("nav-tab");
