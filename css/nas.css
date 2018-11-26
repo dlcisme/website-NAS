@@ -32,12 +32,17 @@
 .radarr_logo {
     background: url("../images/radarr-logo.png") no-repeat;
 }
-.headphones_logo {
-    background: url("../images/headphones-logo.png") no-repeat;
+
+.lidarr_logo {
+    background: url("../images/lidarr-logo.png") no-repeat;
 }
 
 .plex_logo {
     background: url("../images/plex-logo.png") no-repeat;
+}
+
+.ombi_logo {
+    background: url("../images/ombi-logo.png") no-repeat;
 }
 
 .mineos_logo {
