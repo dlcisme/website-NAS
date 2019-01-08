@@ -49,6 +49,10 @@
     background: url("../images/ombi-logo.png") no-repeat;
 }
 
+.nextcloud_logo {
+    background: url("../images/nextcloud-logo.png") no-repeat;
+}
+
 .mineos_logo {
     background: url("../images/mineos-logo.png") no-repeat;
 }
