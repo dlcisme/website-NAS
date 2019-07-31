@@ -30,7 +30,7 @@ iframe {
 /* make sure (iframe-container height) + (.nav-tab height) = 100 */
 iframe-container {
     display: block;
-    height: 92vh;
+    height: 93vh;
 }
 
 /* set the navigation bar's properties */
@@ -47,14 +47,16 @@ nav-bar {
 /* set the navigation tab's properties */
 /* NOTE: the width should be set to (100/# of tabs) to evenly */
 /*       distribute the tabs across the navigation bar. If you want */
-/*       square tabs change the width to be the same as the height */
+/*       square tabs change the height to be the same as the width */
+/*       in ".nav-tab" and make "iframe-container" height + ".nav-tab" */
+/*       height = 100    */
 .nav-tab {
     float: left;
     /* width: 10vh; */
     /*use vh if you want square tabs */
-    width: 8vw;
+    width: 7vw;
     /* use vw if you want tabs across nav bar */
-    height: 8vh;
+    height: 7vh;
     background-size: contain;
     background-position: center;
 }
