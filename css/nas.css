@@ -41,6 +41,11 @@
     background: url("../images/plex-logo.png") no-repeat;
 }
 
+.emby_logo {
+    background: url("../images/emby-logo.png") no-repeat;
+}
+
+
 .tautulli_logo {
     background: url("../images/tautulli-logo.png") no-repeat;
 }
